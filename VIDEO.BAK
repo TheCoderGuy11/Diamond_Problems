@@ -1,0 +1,43 @@
+// Today we will draw a diamond pattern
+#include<iostream.h>
+#include<conio.h>   //prototype declaration
+void main()
+{
+	clrscr();		//to clear screen(garbage screen)
+	int i,j,k,n;
+	cout<<"Enter the number N \n";
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		for(k=n;k>i;k--)
+		{
+			cout<<" ";  	// for spaces
+		}
+		for(j=0;j<i;j++)
+		{
+			cout<<"*";      // To print first half
+		}
+		for(j=1;j<i;j++)
+		{
+			cout<<"*";      // TO print second half
+		}
+		cout<<endl;	//newline
+	}
+	for(i=0;i<n;i++)
+	{
+		for(k=i;k>0;k--)
+		{
+			cout<<" ";    	//for spaces
+		}
+		for(j=n;j>i;j--)
+		{
+			cout<<"*";             // for printing one half
+		}
+		for(j=n-1;j>i;j--)
+		{
+			cout<<"*";		// for printing second half 
+		}
+		cout<<endl;
+	}
+getch();			//to hold screen
+}
